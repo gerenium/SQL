@@ -1,3 +1,4 @@
-SELECT name_author, supply.author
-FROM author RIGHT JOIN supply
-     on author.name_author = supply.author
+SELECT buy_id, date_step_end
+FROM buy_step
+WHERE step_id = 1 
+     AND date_step_end IS NOT NULL
